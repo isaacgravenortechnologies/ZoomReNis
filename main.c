@@ -22,7 +22,10 @@
 ********************************************************************************************/
 
 #include "raylib.h"
+#include "variables.h"
 #include <stdio.h>
+#include "init.h"
+#include "movie.h"
 //------------------------------------------------------------------------------------
 // Program main entry point
 //------------------------------------------------------------------------------------
@@ -30,22 +33,17 @@ int main(void)
 {
     // Initialization
     //--------------------------------------------------------------------------------------
-    const int screenWidth = 1280;
-    const int screenHeight = 720;
-    InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+
+    InitWindow(screenWidth, screenHeight, "ZoomReNis");
     InitAudioDevice();
-    Sound introSound = LoadSound("./resources/movie/intro/eng_no_c/audio/intro.wav");
-    char path[60];
-    SetTargetFPS(30);               // Set our game to run at 30 frames-per-second
-    int frameCount=1;
+    SetTargetFPS(fpsTarget);               // Set our game to run at 30 frames-per-second
+    initVars();
     //--------------------------------------------------------------------------------------
 
     // Main game loop
     while (!WindowShouldClose())    // Detect window close button or ESC key
     {
-        if(!(IsSoundPlaying(introSound))) PlaySound(introSound);
-        sprintf(path, "./resources/movie/intro/eng_no_c/frames/frame%04d.jpg",frameCount);
-        Texture introTexture=LoadTexture(path);
+        playMovie();
         frameCount++;
         // Update
         //----------------------------------------------------------------------------------
@@ -55,7 +53,6 @@ int main(void)
         // Draw
         //----------------------------------------------------------------------------------
         BeginDrawing();
-
             ClearBackground(RAYWHITE);
             DrawTexture(introTexture,0,0,WHITE);
         EndDrawing();
