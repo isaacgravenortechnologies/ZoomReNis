@@ -10,7 +10,7 @@ SHA-256 of `Zoombinis.exe` from Steam install, use [this tool](https://emn178.gi
 Raylib header file from [here](https://github.com/raysan5/raylib/blob/master/src/raylib.h/) (download and put in `include` folder)  
   
 ## Installation
-Decrypt `resources.7z`, with the SHA-256 of `Zoombinis.exe` from Steam install, and extract so that `resources` folder containing `movie` subdirectory is in the root of this repository. Then, run `build.bat` if you're on Windows, or `build.sh` on Linux, and then run `main.exe` (Windows) or just `main` for Linux (might need `chmod` to be run first)  
+Decrypt `zoombinis.7z`, with the SHA-256 of `Zoombinis.exe` from Steam install, and extract so that `zoombinis` folder containing `movie` subdirectory is in the root of this repository. This is the `zoombinis` game, the default one in the engine, which uses assets from the original Unity remake. Next, run `build.bat` if you're on Windows, or `build.sh` on Linux, and then run `main.exe` (Windows) or just `main` for Linux (might need `chmod` to be run first)  
   
 ## Troubleshooting
 ***I'm getting an error involving raylib.***
