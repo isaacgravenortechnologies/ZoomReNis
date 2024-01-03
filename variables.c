@@ -6,5 +6,5 @@ char path[60];
 int fpsTarget = 29;
 Sound introSound;
 void initVars() {
-    introSound = LoadSound("./resources/movie/intro/eng_no_c/audio/intro.wav");
+    introSound = LoadSound("./zoombinis/movie/intro/eng_no_c/audio/intro.wav");
 }

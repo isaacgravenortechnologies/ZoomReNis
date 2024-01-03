@@ -4,8 +4,9 @@
 #define INTRO_ENG_NOC 0
 Texture introTexture;
 void playMovie(int movie) {
-        if(movie==INTRO_ENG_NOC)
+        if(movie==INTRO_ENG_NOC) {
         if(!(IsSoundPlaying(introSound))) PlaySound(introSound);
-        sprintf(path, "./resources/movie/intro/eng_no_c/frames/frame%04d.jpg",frameCount);
+        sprintf(path, "./zoombinis/movie/intro/eng_no_c/frames/frame%04d.jpg",frameCount);
         introTexture=LoadTexture(path);
+        }
 }
