@@ -26,15 +26,27 @@
 #include <stdio.h>
 #include "init.h"
 #include "movie.h"
+#include "file.h"
 //------------------------------------------------------------------------------------
 // Program main entry point
 //------------------------------------------------------------------------------------
 int main(int argc, char **argv)
 {
+    if(argc>0) {
+        for(i=0;i<100;i++) {
+            gameName[i]=argv[i];
+        }
+    }
+    else {
+        for(i=0;i<100;i++) {
+        gameName[i]="zoombinis"[i];
+        }
+    }
     // Initialization
     //--------------------------------------------------------------------------------------
-
-    InitWindow(screenWidth, screenHeight, "ZoomReNis");
+    sprintf(gameNamePath, "./%s/name",gameName);
+    readFile(gameNamePath);
+    InitWindow(screenWidth, screenHeight, readString);
     InitAudioDevice();
     SetTargetFPS(fpsTarget);               // Set our game to run at 30 frames-per-second
     initVars();
