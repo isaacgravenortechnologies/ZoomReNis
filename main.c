@@ -43,7 +43,7 @@ int main(int argc, char **argv)
     // Main game loop
     while (!WindowShouldClose())    // Detect window close button or ESC key
     {
-        playMovie();
+        playMovie(INTRO_ENG_NOC);
         frameCount++;
         // Update
         //----------------------------------------------------------------------------------
