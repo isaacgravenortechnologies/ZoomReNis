@@ -10,6 +10,7 @@
 - Support for new games as mods to the binary (take the original Portal game to Half-Life 2/Source Engine for example)  
 - Ported engine to multiple platforms  
 - Easy-to-use buildsystem (maybe using makefiles)  
+- Easy asset extraction from Steam installation  
   
 ## Requirements and Dependencies
 - `build-essential` package on Linux or MinGW on Windows should do the trick, `lib/libraylib.a` might need recompiling manually from raylib repository, **remember to add JPG support! (remove the `//` before the ``//#define SUPPORT_FILEFORMAT_JPG`` on line 153 and run `make` for Linux, can be `mingw32/64-make`` (depending on the one you installed on Windows. )**  
