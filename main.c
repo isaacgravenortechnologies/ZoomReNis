@@ -39,14 +39,14 @@ int main(int argc, char **argv)
     }
     else {
         for(i=0;i<100;i++) {
-        gameName[i]="zoombinis"[i];
+            gameName[i]="zoombinis"[i];
         }
     }
     // Initialization
     //--------------------------------------------------------------------------------------
     sprintf(gameNamePath, "./%s/name",gameName);
     readFile(gameNamePath);
-    InitWindow(screenWidth, screenHeight, readString);
+    InitWindow(screenWidth, screenHeight, "Zoombinis");
     InitAudioDevice();
     SetTargetFPS(fpsTarget);               // Set our game to run at 30 frames-per-second
     initVars();
