@@ -1,8 +1,5 @@
 zoombinis/
 include/
-!lib/
-lib/*
-!lib/libraylib.a
 *.exe
 **/.vscode/
 temp/

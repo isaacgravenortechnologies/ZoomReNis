@@ -1,0 +1,17 @@
+diff --git a/src/rtextures.c b/src/rtextures.c
+index cdec7a3a..759681b0 100644
+--- a/src/rtextures.c
++++ b/src/rtextures.c
+@@ -8,9 +8,9 @@
+ *
+ *       #define SUPPORT_FILEFORMAT_BMP
+ *       #define SUPPORT_FILEFORMAT_PNG
+-*       #define SUPPORT_FILEFORMAT_TGA
+-*       #define SUPPORT_FILEFORMAT_JPG
+-*       #define SUPPORT_FILEFORMAT_GIF
++*       #define SUPPORT_FILEFORMAT_TGA **/
++#define SUPPORT_FILEFORMAT_JPG
++/**       #define SUPPORT_FILEFORMAT_GIF
+ *       #define SUPPORT_FILEFORMAT_QOI
+ *       #define SUPPORT_FILEFORMAT_PSD
+ *       #define SUPPORT_FILEFORMAT_HDR
