@@ -46,7 +46,7 @@ int main(int argc, char **argv)
     //--------------------------------------------------------------------------------------
     sprintf(gameNamePath, "./%s/name",gameName);
     readFile(gameNamePath);
-    InitWindow(screenWidth, screenHeight, "Zoombinis");
+    InitWindow(screenWidth, screenHeight, "Zoombinis - Unity version demake");
     InitAudioDevice();
     SetTargetFPS(fpsTarget);               // Set our game to run at 30 frames-per-second
     initVars();
