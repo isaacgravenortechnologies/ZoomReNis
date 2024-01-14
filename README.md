@@ -36,7 +36,7 @@
 > Try reinstalling, or compiling in a VM.  
 
 ***I get a compilation error related to Raylib and ``rtextures.c``. What do I do?***  
-> Please notify me by writing an issue noting that the current raylib patch is out of date, or work iut how to add JPG support to raylib and how to compile it yourself.
+> Please notify me by writing an issue noting that the current raylib patch is out of date, or work out how to add JPG support to raylib and how to compile it yourself.
   
 ***My issue isn't listed/the fixes here didn't work.***
 > Please write a GitHub issue reporting the bug, the environment and the various tool versions, and I will try to get back to you about fixing your problem.
