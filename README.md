@@ -13,6 +13,8 @@
 - Easy asset extraction from Steam installation  
   
 ## Requirements and Dependencies
+- Simple know-how of (and access to) command-line on PC, no admin rights required to build this project, but they may be needed to install its dependencies if you don't have them installed already.  
+  
 - Git installed, run ``git`` command to make sure it is installed and on PATH.  
   
 - `build-essential` package on Linux, otherwise MinGW on Windows should do the trick.  
