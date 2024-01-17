@@ -1,1 +1,1 @@
-gcc main.c -o main -O1 -Wall -std=c99 -Wno-missing-braces -L ./lib/ -lraylib -lopengl32 -lgdi32 -lwinmm -Iinclude
+echo "Linux isn't currently supported. Use a windows build, or work out how to build it yourself. No support will be given."
