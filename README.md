@@ -17,19 +17,19 @@
   
 - Git installed, run ``git`` command to make sure it is installed and on PATH.  
   
-- `build-essential` package on Linux, otherwise MinGW on Windows should do the trick.  
+- MinGW on Windows
   
 - Steam copy of Zoombinis purchased and downloaded.
   
 - SHA-256 of `Zoombinis.exe` from Steam install, use [this tool](https://emn178.github.io/online-tools/sha256_checksum.html) to obtain this. 
   
 ## Installation
-- Open a command prompt (type ``cmd`` in Windows search if on Windows, open Terminal on Linux).  
+- Open a command prompt (type ``cmd`` in Windows search)  
 - Git clone this repository with ``git clone --recursive https://github.com/isaacgravenortechnologies/ZoomReNis.git``  
 - Enter newly created ``ZoomReNis`` directory.  
 - Decrypt `zoombinis.7z`, with the SHA-256 of `Zoombinis.exe` from Steam install, and extract so that `zoombinis` folder containing `movie` subdirectory is in the root of this repository. This is the `zoombinis` game, the default one in the engine, which uses assets from the original Unity remake.  
-- Next, run `build.bat` if you're on Windows, or `build.sh` on Linux.  
-- Then run `main.exe` (Windows) or just `main` for Linux (might need `chmod` to be run first)  
+- Next, run `build.bat`.  
+- Then run `main.exe`.  
   
 ## Troubleshooting
 ***I'm getting an error involving raylib.***
