@@ -17,6 +17,6 @@ def downloadFFmpeg(os):
 
 print("DO NOT USE! This script is incomplete and may produce unexpected, memory-using or storage eating output.")
 exit()
-platform=input("Please enter your platform: 'w' for Windows, 'm' for MacOS or 'l' for Linux. other OSes are not currently supported, maybe raise an issue on GitHub.")
+platform=input("Please enter your platform: 'w' for Windows, 'm' for MacOS, other OSes are not currently supported, maybe raise an issue on GitHub.")
 installDir=input("Please enter the directory where your Zoombinis Steam install is (Zoombinis.exe/other executable format): ")
 downloadFFmpeg(platform.lower())
