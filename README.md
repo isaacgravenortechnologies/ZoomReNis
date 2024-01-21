@@ -17,17 +17,19 @@
   
 - Git installed, run ``git`` command to make sure it is installed and on PATH.  
   
-- MinGW on Windows
+- MinGW on Windows, or some other form of getting ``GCC`` and ``make`` and ``ld``  
   
 - Steam copy of Zoombinis purchased and downloaded.
   
 - SHA-256 of `Zoombinis.exe` from Steam install, use [this tool](https://emn178.github.io/online-tools/sha256_checksum.html) to obtain this. 
   
+- 7-Zip installed (or another archive extractor that supports 7z files)  
+  
 ## Installation
-- Open a command prompt (type ``cmd`` in Windows search)  
-- Git clone this repository with ``git clone --recursive https://github.com/isaacgravenortechnologies/ZoomReNis.git``  
-- Enter newly created ``ZoomReNis`` directory.  
-- Decrypt `zoombinis.7z`, with the SHA-256 of `Zoombinis.exe` from Steam install, and extract so that `zoombinis` folder containing `movie` subdirectory is in the root of this repository. This is the `zoombinis` game, the default one in the engine, which uses assets from the original Unity remake.  
+- Open a command prompt (type ``cmd`` in Windows search, and type ``cd (the directory you want to work in, for example C:\Users\Person1\Downloads)``)  
+- Git clone this repository with ``git clone --recursive https://github.com/isaacgravenortechnologies/ZoomReNis.git``.  
+- Enter newly created ``ZoomReNis`` directory with ``cd ZoomReNis``.  
+- Decrypt (extract with 7-zip/other program) `zoombinis.7z`, with the SHA-256 of `Zoombinis.exe` from Steam install, and extract so that `zoombinis` folder containing `movie` subdirectory is in the root of this repository. This is the `zoombinis` game, the default one in the engine, which uses assets from the original Unity remake.  
 - Next, run `build.bat`.  
 - Then run `main.exe`.  
   
